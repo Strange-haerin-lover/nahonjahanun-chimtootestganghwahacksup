@@ -16,7 +16,7 @@ def curiosity_reward_decay(step, base_reward=1.0, decay_rate=0.005):
     """
     reward = max(base_reward * (1 - decay_rate * step), 0)
     return reward
-# 최악의 보상에 음의 보상을 주는 호기심 함수
+# 최악의 경우에 음의 보상을 주는 호기심 함수
 def curiosity_reward_with_penalty(is_redundant=False, is_error=False, step=0,
                                   base_reward=1.0, penalty_redundant=0.3, penalty_error=0.5,
                                   decay_rate=0.003):
