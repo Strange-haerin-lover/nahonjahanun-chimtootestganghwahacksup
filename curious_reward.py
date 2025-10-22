@@ -6,7 +6,7 @@
 
 
 #자동 감쇠형 호기심 함수
-#def curiosity_reward_decay(step, base_reward=1.0, decay_rate=0.005):
+def curiosity_reward_decay(step, base_reward=1.0, decay_rate=0.005):
     """
     호기심 보상이 스텝(step)에 따라 자연스럽게 감소하는 함수.
     예: 초반엔 높은 보상, 후반으로 갈수록 점점 감소.
